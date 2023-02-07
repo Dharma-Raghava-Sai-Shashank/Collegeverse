@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.15"
+            app:layout_constraintGuide_percent="0.1"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.Guideline
@@ -69,7 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:drawablePadding="10dp"
-                android:hint="name"
+                android:hint="Name"
                 android:paddingLeft="15dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -87,7 +87,7 @@
                 android:id="@+id/editTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="email"
+                android:hint="Email"
                 android:inputType="text"
                 android:paddingLeft="15dp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -106,7 +106,7 @@
                 android:id="@+id/editTextPhone"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="phone_no"
+                android:hint="Phone"
                 android:inputType="number"
                 android:paddingLeft="15dp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -126,7 +126,7 @@
                 android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="password"
+                android:hint="Password"
                 android:inputType="textPassword"
                 android:paddingLeft="15dp" />
 
@@ -148,7 +148,7 @@
                 android:id="@+id/editTextReEnterPassword"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="ReEnterPassword"
+                android:hint="Confirm Password"
                 android:inputType="textPassword"
                 android:paddingLeft="15dp" />
 
@@ -156,18 +156,18 @@
 
         <Button
             android:id="@+id/SignUpButton"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/buttons"
-
-            android:text="signUp"
-            android:textColor="#FFFFFF"
-            android:textSize="20dp"
+            android:backgroundTint="#5284e9"
+            android:text="SignUp"
+            android:textAllCaps="false"
+            android:textColor="#1E2B4A"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline4"
             app:layout_constraintEnd_toEndOf="@id/guideline2"
             app:layout_constraintStart_toEndOf="@id/guideline1"
             app:layout_constraintTop_toBottomOf="@id/editTextLayoutReEnterPassword"
-            app:layout_constraintBottom_toBottomOf="@id/guideline4"
             app:layout_constraintVertical_bias="0.93" />
 
         <RelativeLayout
