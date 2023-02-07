@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Collegeverse"
         tools:targetApi="31">
         <activity
+            android:name=".ChatActivity"
+            android:exported="false"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/Theme.Collegeverse.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Registration"
             android:exported="false">
             <meta-data
