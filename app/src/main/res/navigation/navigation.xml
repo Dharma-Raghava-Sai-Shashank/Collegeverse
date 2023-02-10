@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/generateOTP">
+
+    <fragment
+        android:id="@+id/generateOTP"
+        android:name="com.example.collegeverse.GenerateOTP"
+        android:label="GenerateOTP" >
+        <action
+            android:id="@+id/action_generateOTP_to_verifyOTP"
+            app:destination="@id/verifyOTP" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPassword"
+        android:name="com.example.collegeverse.ResetPassword"
+        android:label="ResetPassword" />
+    <fragment
+        android:id="@+id/verifyOTP"
+        android:name="com.example.collegeverse.VerifyOTP"
+        android:label="VerifyOTP" >
+        <action
+            android:id="@+id/action_verifyOTP_to_resetPassword"
+            app:destination="@id/resetPassword" />
+    </fragment>
+</navigation>

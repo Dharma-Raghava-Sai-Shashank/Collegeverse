@@ -10,7 +10,8 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/logo_background"
+        android:background="@color/blue"
+        android:backgroundTint="#87AFFF"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,20 +19,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" /><![CDATA[
-
-    />
-
-
-
-
-
-
-
-
-
-
-    ]]>
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView"
@@ -72,7 +60,7 @@
             android:background="@drawable/view_pagerdesign"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tablayout1"
             app:layout_constraintTop_toTopOf="parent"
@@ -80,15 +68,15 @@
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tablayout1"
-            android:layout_width="412dp"
-            android:layout_height="55dp"
+            android:layout_width="401dp"
+            android:layout_height="57dp"
             android:background="@drawable/view_pagerdesign"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0"
-            app:tabIndicatorColor="#5284e9"
+            app:tabIndicatorColor="#264C97"
             app:tabIndicatorFullWidth="false"
             app:tabIndicatorHeight="3dp"
             app:tabTextColor="#264C97" />
@@ -97,12 +85,13 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:layout_width="87dp"
-        android:layout_height="73dp"
+        android:layout_width="104dp"
+        android:layout_height="89dp"
         android:layout_marginBottom="4dp"
         android:background="@drawable/logo"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

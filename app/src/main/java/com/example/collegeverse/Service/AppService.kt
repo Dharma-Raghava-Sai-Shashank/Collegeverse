@@ -1,10 +1,10 @@
-package com.example.collegeverse.Retrofit
+package com.example.collegeverse.Service
 
 import com.example.collegeverse.Model.User
 import retrofit2.Response
 import retrofit2.http.GET
 
-interface AppApi
+interface AppService
 {
     @GET("about")
     suspend fun getUsers(): Response<List<User>>
