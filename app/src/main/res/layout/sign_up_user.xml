@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintGuide_percent="1" />
+            app:layout_constraintGuide_percent="1.0" />
 
 
         <androidx.constraintlayout.widget.Guideline
