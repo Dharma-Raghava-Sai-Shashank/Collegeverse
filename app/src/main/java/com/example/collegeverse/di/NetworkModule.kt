@@ -1,6 +1,6 @@
 package com.example.collegeverse.di
 
-import com.example.collegeverse.Service.AppService
+import com.example.collegeverse.Service.MainService
 import com.example.collegeverse.Service.RegistrationService
 import com.example.collegeverse.Utill.Constant
 import dagger.Module
@@ -27,7 +27,7 @@ class NetworkModule {
 
     @Singleton
     @Provides
-    fun providesAppApi(retrofit: Retrofit): AppService =retrofit.create(AppService::class.java)
+    fun providesAppApi(retrofit: Retrofit): MainService =retrofit.create(MainService::class.java)
 
     @Singleton
     @Provides

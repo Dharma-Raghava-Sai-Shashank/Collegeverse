@@ -19,13 +19,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/main_menu" />
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/PersonImage"
+        android:id="@+id/PersonImager"
         android:layout_width="48dp"
         android:layout_height="40dp"
         android:layout_centerInParent="true"
         android:layout_marginTop="10dp"
         android:src="@drawable/profile"
-        android:onClick="profilepic"
         app:civ_border_color="#FF000000"
         app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +38,7 @@
         android:layout_height="52dp"
         android:background="#FFFFFF"
         app:itemIconSize="28dp"
-        app:itemIconTint="#FF2667E6"
+        app:itemIconTint="#022871"
         app:itemTextColor="?android:attr/textColorPrimaryInverseNoDisable"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,14 +55,37 @@
         android:text="Username"
         android:textColor="#0E0E0E"
         android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/PersonImage"
+        app:layout_constraintStart_toEndOf="@+id/PersonImager"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.drawerlayout.widget.DrawerLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView4"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navGraph="@navigation/main_nav" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawer"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="32dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,8 +98,8 @@
             android:layout_gravity="start"
             android:background="@drawable/drawer_bac"
             app:headerLayout="@layout/drawer_header"
-            app:menu="@menu/drawer_menu" />
-
+            app:menu="@menu/drawer_menu"
+            android:visibility="invisible"/>
     </androidx.drawerlayout.widget.DrawerLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

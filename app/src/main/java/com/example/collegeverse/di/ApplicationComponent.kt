@@ -1,5 +1,6 @@
 package com.example.collegeverse.di
 
+import com.example.collegeverse.ViewModel.MainViewModelFactory
 import com.example.collegeverse.ViewModel.RegistrationViewModelFactory
 import dagger.Component
 import javax.inject.Singleton
@@ -9,4 +10,7 @@ import javax.inject.Singleton
 interface ApplicationComponent {
     @Singleton
     fun getRegistrtionRepo():RegistrationViewModelFactory
+
+    @Singleton
+    fun getMainRepo():MainViewModelFactory
 }

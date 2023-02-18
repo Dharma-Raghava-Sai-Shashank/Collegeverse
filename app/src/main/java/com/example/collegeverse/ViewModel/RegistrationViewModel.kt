@@ -18,7 +18,6 @@ class RegistrationViewModel(var registrationRepo: RegistrationRepo) : ViewModel(
     var _LoginStatus=MutableLiveData<Responser>()
     var _VerifyOTP=MutableLiveData<Responser>()
     var _isActive=MutableLiveData<Boolean>(false)
-    lateinit var email:String
 
     // LiveData :
     var SignupStatus:LiveData<Responser> = _SignupStatus
@@ -50,7 +49,6 @@ class RegistrationViewModel(var registrationRepo: RegistrationRepo) : ViewModel(
 
     fun generateOTP(generateOTP: GenerateOTP)
     {
-        email=generateOTP.email
         viewModelScope.launch {
             _VerifyOTP.postValue(registrationRepo.generateOTP(generateOTP))
         }

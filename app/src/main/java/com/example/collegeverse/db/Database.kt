@@ -2,11 +2,13 @@ package com.example.collegeverse.db
 
 import android.content.Context
 import android.content.SharedPreferences
+import com.example.collegeverse.Model.Post
 import javax.inject.Inject
 
 class Database @Inject constructor(){
     lateinit var sharedPreferences:SharedPreferences
     lateinit var editor:SharedPreferences.Editor
+
     fun SetToken(context: Context,token:String)
     {
         sharedPreferences=context.getSharedPreferences("App",0)
@@ -15,6 +17,7 @@ class Database @Inject constructor(){
         editor.putString("token",token)
         editor.commit()
     }
+
     fun GetToken(context: Context): String?
     {
         sharedPreferences=context.getSharedPreferences("App",0)
