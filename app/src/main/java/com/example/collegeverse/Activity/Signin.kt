@@ -10,13 +10,9 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.collegeverse.ForgotPassword
-import com.example.collegeverse.MainActivity
 import com.example.collegeverse.Model.SigninUser
-import com.example.collegeverse.Model.SignupUser
 import com.example.collegeverse.R
 import com.example.collegeverse.ViewModel.RegistrationViewModel
-import com.example.collegeverse.databinding.SignUpUserBinding
 import com.example.collegeverse.databinding.SigninUserBinding
 import com.example.collegeverse.di.DaggerApplicationComponent
 

@@ -11,8 +11,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
-import com.example.collegeverse.MainActivity
 import com.example.collegeverse.Model.GenerateOTP
 import com.example.collegeverse.Model.SignupUser
 import com.example.collegeverse.R

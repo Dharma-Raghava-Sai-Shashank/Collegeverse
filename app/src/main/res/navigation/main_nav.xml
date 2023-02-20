@@ -6,19 +6,19 @@
 
     <fragment
         android:id="@+id/fragment_Post"
-        android:name="com.example.collegeverse.Fragment_Post"
+        android:name="com.example.collegeverse.Fragment.Fragment_Post"
         android:label="Fragment_Post" />
     <fragment
         android:id="@+id/fragment_Profile"
-        android:name="com.example.collegeverse.Fragment_Profile"
+        android:name="com.example.collegeverse.Fragment.Fragment_Profile"
         android:label="Fragment_Profile" />
     <fragment
         android:id="@+id/fragment_Settings"
-        android:name="com.example.collegeverse.Fragment_Settings"
+        android:name="com.example.collegeverse.Fragment.Fragment_Settings"
         android:label="Fragment_Settings" />
     <fragment
         android:id="@+id/fragment_home"
-        android:name="com.example.collegeverse.Fragment_home"
+        android:name="com.example.collegeverse.Fragment.Fragment_home"
         android:label="Fragment_home" >
         <action
             android:id="@+id/action_fragment_home_to_fragment_Post"
@@ -35,10 +35,10 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_liked"
-        android:name="com.example.collegeverse.Fragment_liked"
+        android:name="com.example.collegeverse.Fragment.Fragment_liked"
         android:label="Fragment_liked" />
     <fragment
         android:id="@+id/fragment_query"
-        android:name="com.example.collegeverse.Fragment_connection"
+        android:name="com.example.collegeverse.Fragment.Fragment_connection"
         android:label="Fragment_query" />
 </navigation>

@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import androidx.appcompat.app.AppCompatActivity
 import com.example.collegeverse.R
-import com.example.collegeverse.Registration
 
 
 class Logo : AppCompatActivity() {
